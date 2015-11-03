@@ -20,28 +20,30 @@ header {height:120px}
 ul {padding:0px;margin:0px;list-style:none}
 
 header ul li {float:left}
-header #primary-nav {position:absolute;right:15px;top:100px}
-header #primary-nav ul li img {height:50px;margin:0px 15px}
-header #primary-nav ul li:hover {background:#e3e3e3}
-header #primary-nav ul li.sep {border-left:1px solid #666;height:40px;margin:5px 15px;}
+header #primary-nav {position:absolute;right:15px;top:85px}
+header #primary-nav ul li img {height:45px;margin:0px 15px}
+header #primary-nav ul li:hover, header #primary-nav ul li.active {background:#e3e3e3}
+header #primary-nav ul li.sep {border-left:1px solid #666;height:30px;margin:8px 15px;}
 header #primary-nav li:last-child {border:none}
 header #links-sns {position:absolute;top:15px;right:15px}
-header #links-sns img {height:28px;margin:8px 5px}
+header #links-sns img {height:25px;margin:8px 5px}
 header #links-sns {line-height:40px}
-header #links-sns .sns {cursor:pointer;height:44px;width:44px;border-radius:40px;background:#eee;margin:0px 5px;border:1px solid #eee}
+header #links-sns .sns {cursor:pointer;height:40px;width:40px;border-radius:40px;background:#eee;margin:0px 5px;border:1px solid #eee}
 header #links-sns .sns:hover {background:#ccc}
 header #links-sns .contact {margin-right:10px}
+header a {color:#000;text-decoration:none}
+header a:hover {text-decoration:underline}
 
-.site-title {margin-top:40px;margin-left:40px}
+.site-title {margin-top:20px;margin-left:40px}
 
-footer {position:absolute;z-index:100;font-size:12px;line-height:30px;background:#000}
+footer {position:absolute;z-index:100;font-size:12px;line-height:30px;background:#000;width:100%;color:#fff;text-align:center}
 footer .site-info {padding-right:10px}
 
 /** index **/
 #sliders-index {height:100%;}
 #sliders-index > .swiper-wrapper > .swiper-slide {background-repeat:no-repeat;background-position:center;background-size:cover}
 #sliders-index > .swiper-wrapper .text {position:absolute;left:50%;margin-top:50px}
-#sliders-index .swiper-slider-1 {background-image:url('images/slider-1.jpg')}
+#sliders-index .swiper-slider-1 {background-image:url('images/slider-1.jpg');background-position:bottom center!important}
 #sliders-index .swiper-slider-2 {background-image:url('images/slider-2.jpg')}
 #sliders-index .swiper-slider-3 {background-image:url('images/slider-3.jpg')}
 #sliders-index .swiper-slider-4 {background-image:url('images/slider-4.jpg')}
@@ -52,7 +54,7 @@ footer .site-info {padding-right:10px}
 	-webkit-animation-duration:200ms;animation-duration:200ms;-ms-animation-duration:200ms;-moz-animation-duration:200ms;
 	-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;-moz-animation-timing-function:ease-out;
 }
-#slider-thumb > div {cursor:pointer;padding:5px;width:80px;height:80px;float:left;margin-bottom:10px;margin-right:10px;background:#000;color:#fff}
+#slider-thumb > div {cursor:pointer;padding:5px;width:80px;height:80px;margin-bottom:10px;margin-right:10px;background:#000;color:#fff}
 #slider-thumb > div > span {display:none}
 #slider-thumb > div.clear {background-image:none}
 #slider-thumb > div {background-image:url('images/slider-thumb-1.png');background-repeat:no-repeat;background-size:180px auto}
@@ -64,27 +66,41 @@ footer .site-info {padding-right:10px}
 #slider-thumb > div.slider-thumb-5 {background-position:0px -186px}
 #slider-thumb > div.slider-thumb-6 {background-position:-93px -186px}
 
-#news-floater {position:absolute;right:0px;bottom:50px;z-index:100}
+#news-floater {position:absolute;right:0px;bottom:80px;z-index:100}
 #news-floater .news-button {cursor:pointer;float:right}
-#news-floater .news-content {color:white;float:left;width:500px;height:135px;background:rgba(0,0,0,0.6);box-shadow:1px 5px 10px -2px #000;}
+#news-floater .news-content {color:white;float:left;width:500px;height:174px;background:rgba(0,0,0,0.6);box-shadow:1px 5px 10px -2px #000;}
 #news-floater .news-content p {margin:0px;padding:0px;font-size:16px}
 #news-floater .news-content p.date {text-align:right;font-size:12px;font-style:italic}
 #news-floater .news-content a {color:#fff;text-decoration:none}
 #news-floater .news-content a:hover {text-decoration:underline}
-#news-floater .news-content ul {padding:10px 15px 10px 25px;list-style:disc;}
+#news-floater .news-content ul {padding:10px 15px 10px 30px;list-style:disc;}
+
+#wx-floater {position:absolute;right:10px;top:70px;z-index:100;}
 
 #footer-index {position:absolute;bottom:0px;height:30px;left:0px;color:#fff;line-height:30px;width:100%;text-align:right}
 
 
 /** page content **/
 .primary-wrapper {width:1000px;margin:auto}
-#page-side {float:left;width:300px;height:30px}
-.primary-content {float:left;width:700px}
-#secondary-nav {position:absolute}
-.page-content .cover-img {background-repeat:no-repeat;background-position:center;height:100px;width:100%;background-size:auto}
+#page-side {float:left;width:350px;height:30px}
+.primary-wrapper {margin-top:50px}
+.primary-content {float:left;width:650px}
+#secondary-nav {position:absolute;top:600px}
+#secondary-nav li a {color:#000;text-decoration:none}
+#secondary-nav li {margin:10px 0px;font-size:16px;border-bottom:1px dotted #999;padding:5px}
+#secondary-nav li i {display:none!important}
+#secondary-nav li:hover, #secondary-nav li.active {font-weight:bold}
+#secondary-nav li:hover i, #secondary-nav li.active i {display:inline-block!important}
+.page-content .cover-img {background-repeat:no-repeat;background-position:center;height:200px;width:100%;background-size:cover}
+.section-title {border-bottom:1px solid #999}
+.section-content p {text-indent:28px;line-height:1.6}
+.section-content {margin-bottom:50px;color:#333}
+.section-content:last-child {margin-bottom:150px}
 
 /** Page - About **/
-#page-about-futeng .cover-img {background-image:url('images/slider-2.jpg')};
+#page-about-futeng .cover-img {background-image:url('images/cover-about.jpg')}
+#page-about-futeng .section-content table.partners {margin-top:10px}
+#page-about-futeng .section-content table.partners td {padding-right:20px}
 
 
 

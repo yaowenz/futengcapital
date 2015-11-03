@@ -1,15 +1,16 @@
 <?php
 get_header(); 
 while ( have_posts() ) : the_post(); ?>
-	<div id="page-<?php echo $post->post_name?>" class="page-content">
-		<div class="cover-img">img</div>	
+	<div id="page-<?php echo $post->post_name?>" class="page-content">		
+		<div class="cover-img"></div>	
 		<div class="primary-wrapper">
 <?php 
 	include_once('pages/' . $post->post_name . '.php');
 endwhile;
 ?>
-		<div class="clear"></div>
+		
 		</div>	
+		<div class="clear"></div>
 	</div>
 	
 	<script type="text/javascript">
@@ -19,7 +20,15 @@ endwhile;
 			$(window).scroll(function() {
 				var offsetX = $('#secondary-nav').offset().left;
 				var offsetY = trailingTopInit + $(window).scrollTop();
-				$('#secondary-nav').offset({left: offsetX, top: offsetY});
+
+				if($(window).scrollTop() > trailingTopInit) {
+					$('#secondary-nav').offset({left: offsetX, top: $(window).scrollTop() + 30});
+				}
+				else {
+					$('#secondary-nav').offset({left: offsetX, top: offsetY});
+				}
+				
+				
 			});
 		});
 	</script>	

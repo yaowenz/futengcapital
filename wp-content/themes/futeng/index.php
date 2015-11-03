@@ -2,10 +2,10 @@
 		<div id="slider-thumb">			
 			<div data-slider="1" class="active hidden slider-thumb-1"><span>关于复腾</span></div>
 			<div data-slider="2" class="hidden slider-thumb-2"><span>新三板投资</span></div>
-			<div class="clear"></div>
+			<!-- <div class="clear"></div> -->
 			<div data-slider="3" class="hidden slider-thumb-3"><span>信贷中心</span></div>
 			<div data-slider="4" class="hidden slider-thumb-4"><span>股权投资PE</span></div>
-			<div class="clear"></div>
+			<!-- <div class="clear"></div> -->
 			<div data-slider="5" class="hidden slider-thumb-5"><span>第三方理财</span></div>
 			<div data-slider="6" class="hidden slider-thumb-6"><span>融资租赁</span></div>
 		</div>
@@ -46,7 +46,7 @@
 			</div>
 			<!-- Add Pagination -->
 			<!-- <div class="swiper-pagination"></div> -->
-	    </div>	   
+	    </div>	 	   
 	    <div id="news-floater">	    	
 	    	<div class="news-content hidden">
 	    		<ul>
@@ -67,7 +67,7 @@
 	    		</ul>
 	    	</div>
 	    	<div class="news-button">
-	    		<img src="<?php echo get_template_directory_uri()?>/images/icon-news.jpg" width="35" />
+	    		<img src="<?php echo get_template_directory_uri()?>/images/icon-news.jpg" width="45" />
 	    	</div>
 	    </div>     	
 		<script type="text/javascript">
@@ -90,7 +90,7 @@
 
 		    // 动态调整大图大小
 			jQuery(window).on('resize', function() {
-				var h = jQuery(window)[0].innerHeight - jQuery('header').height() - 40; // - margin 
+				var h = jQuery(window)[0].innerHeight - jQuery('header').height() - 20; // - margin 
 				if(h > 50) {
 					jQuery('div#content').height(h);
 				}
@@ -101,8 +101,8 @@
 			jQuery('#news-floater').hover(
 					function() {jQuery('.news-content').show(300);}, 
 					function() {jQuery('.news-content').hide(300);}
-			);						
-
+			);	
+						
 			jQuery(function($) {			
 
 				var aniCounter = 0;

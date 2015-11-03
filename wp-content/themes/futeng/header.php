@@ -10,9 +10,23 @@
 	<!--[if lt IE 9]>
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
 	<![endif]-->
-	<link rel="stylesheet" href="<?php echo get_stylesheet_uri()?>" type='text/css' media='all' />
-	
+	<link rel="stylesheet" href="<?php echo get_stylesheet_uri()?>" type='text/css' media='all' />	
 	<?php wp_head(); ?>
+	<script type="text/javascript">
+	jQuery(function($) {
+		// 微信二维码
+		jQuery('.sns-wx').hover(
+				function() {					
+					jQuery('#wx-floater').removeClass('hidden');
+					jQuery('#wx-floater').addClass('animated fadeInUp');
+				}, 
+				function() {
+					jQuery('.news-content').removeClass('animated fadeInUp');
+					jQuery('#wx-floater').addClass('hidden');
+				}
+		);
+	});	
+	</script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -20,28 +34,31 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">				
 			<div class="site-title">
-				<a title="<?php bloginfo( 'name' ); ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img width="380" src="<?php echo get_template_directory_uri()?>/images/ft-logo.png"/></a>
+				<a title="<?php bloginfo( 'name' ); ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri()?>/images/ft-logo.png"/></a>
 			</div>					
 		</div><!-- .site-branding -->
 		<div id="primary-nav">
 			<ul>
-				<li><a href="#" title="公司简介"><img src="<?php echo get_template_directory_uri()?>/images/nav-about.png" /></a></li>
+				<li class="nav-about"><a href="<?php echo site_url('about-futeng')?>" title="公司简介"><img src="<?php echo get_template_directory_uri()?>/images/nav-about.png" /></a></li>
 				<li class="sep"></li>
-				<li><a href="#" title="业务模式"><img src="<?php echo get_template_directory_uri()?>/images/nav-business.png" /></a></li>
+				<li class="nav-business"><a href="#" title="业务模式"><img src="<?php echo get_template_directory_uri()?>/images/nav-business.png" /></a></li>
 				<li class="sep"></li>
-				<li><a href="#" title="投资项目"><img src="<?php echo get_template_directory_uri()?>/images/nav-projects.png" /></a></li>
+				<li class="nav-projects"><a href="#" title="投资项目"><img src="<?php echo get_template_directory_uri()?>/images/nav-projects.png" /></a></li>
 				<li class="sep"></li>
-				<li><a href="#" title="最新活动"><img src="<?php echo get_template_directory_uri()?>/images/nav-activities.png" /></a></li>
+				<li class="nav-activities"><a href="#" title="最新活动"><img src="<?php echo get_template_directory_uri()?>/images/nav-activities.png" /></a></li>
 				<li class="sep"></li>
-				<li><a href="#" title="加入我们"><img src="<?php echo get_template_directory_uri()?>/images/nav-join.png" /></a></li>
+				<li class="nav-join"><a href="#" title="加入我们"><img src="<?php echo get_template_directory_uri()?>/images/nav-join.png" /></a></li>
 			</ul>	
 		</div>
 		<div id="links-sns">
 			<ul>
-				<li class="contact">联系我们</li>
-				<li class="sns"><img src="<?php echo get_template_directory_uri()?>/images/icon-wx.png"></li>
-				<li class="sns"><img src="<?php echo get_template_directory_uri()?>/images/icon-wb.png"></li>				
+				<li class="contact"><a href="<?php echo site_url('about-futeng#contact')?>">联系我们</a></li>
+				<li class="sns sns-wx"><img src="<?php echo get_template_directory_uri()?>/images/icon-wx.png"></li>
+				<li class="sns"><a href="http://weibo.com/futengcapital" target="_blank"><img src="<?php echo get_template_directory_uri()?>/images/icon-wb.png"></a></li>				
 			</ul>
 		</div>
-	</header><!-- .site-header -->
+		 <div id="wx-floater" class="hidden">
+	    	<img width="150" src="<?php echo get_template_directory_uri()?>/images/wx.jpg" />
+	    </div>  
+	</header><!-- .site-header -->	
 	<div id="content" class="site-content">
