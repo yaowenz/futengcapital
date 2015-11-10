@@ -1,22 +1,22 @@
 <?php get_header(); ?>
 		<div id="slider-thumb">			
-			<div data-slider="1" class="active hidden slider-thumb-1"><span>关于复腾</span></div>
-			<div data-slider="2" class="hidden slider-thumb-2"><span>新三板投资</span></div>
+			<div data-slider="1" class="active hidden slider-thumb-1"><a href="<?php echo site_url('about-futeng')?>"><span>关于复腾</span></a></div>
+			<div data-slider="2" class="hidden slider-thumb-2"><a href="<?php echo site_url('business#stock')?>"><span>新三板投资</span></a></div>
 			<!-- <div class="clear"></div> -->
-			<div data-slider="3" class="hidden slider-thumb-3"><span>信贷中心</span></div>
-			<div data-slider="4" class="hidden slider-thumb-4"><span>股权投资PE</span></div>
+			<div data-slider="3" class="hidden slider-thumb-3"><a href="<?php echo site_url('business#credit')?>"><span>信贷中心</span></a></div>
+			<div data-slider="4" class="hidden slider-thumb-4"><a href="<?php echo site_url('business#pe')?>"><span>股权投资PE</span></a></div>
 			<!-- <div class="clear"></div> -->
-			<div data-slider="5" class="hidden slider-thumb-5"><span>第三方理财</span></div>
-			<div data-slider="6" class="hidden slider-thumb-6"><span>融资租赁</span></div>
+			<div data-slider="5" class="hidden slider-thumb-5"><a href="<?php echo site_url('business#3rd')?>"><span>第三方理财</span></a></div>
+			<div data-slider="6" class="hidden slider-thumb-6"><a href="<?php echo site_url('business#loan')?>"><span>融资租赁</span></a></div>
 		</div>
 		<div class="swiper-container" id="sliders-index">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide swiper-slider-1">
 					<!-- add some text content to FIX IE 11 swiper not working bug -->
 					&nbsp;&nbsp;
-					<div class="text" data-swiper-parallax="-1500" data-swiper-parallax-duration="1200">
-		            	<img width="500" src="<?php echo get_template_directory_uri()?>/images/slider-1-text.png" />
-		            </div>
+					<!-- <div class="text" data-swiper-parallax="-1500" data-swiper-parallax-duration="1200">
+		            	<img width="400" src="<?php echo get_template_directory_uri()?>/images/slider-1-text.png" />
+		            </div> -->
 		        </div>
 				<div class="swiper-slide swiper-slider-2">				            
 		            <div class="text" data-swiper-parallax="-1500" data-swiper-parallax-duration="1200">
@@ -25,17 +25,17 @@
 				</div>
 				<div class="swiper-slide swiper-slider-3">
 					<div class="text" data-swiper-parallax="-1500" data-swiper-parallax-duration="1200">
-		            	<img width="500" src="<?php echo get_template_directory_uri()?>/images/slider-3-text.png" />
+		            	<img width="400" src="<?php echo get_template_directory_uri()?>/images/slider-3-text.png" />
 		            </div>
 		        </div>
 				<div class="swiper-slide swiper-slider-4">
 					<div class="text" data-swiper-parallax="-1500" data-swiper-parallax-duration="1200">
-		            	<img width="500" src="<?php echo get_template_directory_uri()?>/images/slider-4-text.png" />
+		            	<img width="400" src="<?php echo get_template_directory_uri()?>/images/slider-4-text.png" />
 		            </div>
 		        </div>
 				<div class="swiper-slide swiper-slider-5">
 					<div class="text" data-swiper-parallax="-1500" data-swiper-parallax-duration="1200">
-		            	<img width="500" src="<?php echo get_template_directory_uri()?>/images/slider-5-text.png" />
+		            	<img width="400" src="<?php echo get_template_directory_uri()?>/images/slider-5-text.png" />
 		            </div>
 		        </div>
 				<div class="swiper-slide swiper-slider-6">
@@ -111,7 +111,7 @@
 					if(!$(this).hasClass('clear')) {
 						var cur = $(this);
 						setTimeout(function() {
-							cur.addClass('animated slideInLeft');						
+							cur.addClass('animated slideInLeft');
 							//cur.show(300);
 							cur.removeClass('hidden');
 						}, 200 * aniCounter);

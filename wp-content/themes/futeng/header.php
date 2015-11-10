@@ -2,7 +2,7 @@
 <!--[if lt IE 10]><html <?php language_attributes(); ?> class="no-js ie-lt-10"><![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--><html <?php language_attributes(); ?> class="no-js ie-gt-10"><!--<![endif]-->
 <head>
-	<title><?php bloginfo( 'name' ); ?></title>
+	<title><?php $blogname = get_bloginfo('name'); $title = wp_title( '|', false, 'right' ); echo empty($title) ? $blogname : ($title . $blogname); ?></title>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
@@ -41,18 +41,18 @@
 			<ul>
 				<li class="nav-about"><a href="<?php echo site_url('about-futeng')?>" title="公司简介"><img src="<?php echo get_template_directory_uri()?>/images/nav-about.png" /></a></li>
 				<li class="sep"></li>
-				<li class="nav-business"><a href="#" title="业务模式"><img src="<?php echo get_template_directory_uri()?>/images/nav-business.png" /></a></li>
+				<li class="nav-business"><a href="<?php echo site_url('business')?>" title="业务模式"><img src="<?php echo get_template_directory_uri()?>/images/nav-business.png" /></a></li>
 				<li class="sep"></li>
-				<li class="nav-projects"><a href="#" title="投资项目"><img src="<?php echo get_template_directory_uri()?>/images/nav-projects.png" /></a></li>
+				<li class="nav-projects"><a href="<?php echo site_url('projects')?>" title="投资项目"><img src="<?php echo get_template_directory_uri()?>/images/nav-projects.png" /></a></li>
 				<li class="sep"></li>
-				<li class="nav-activities"><a href="#" title="最新活动"><img src="<?php echo get_template_directory_uri()?>/images/nav-activities.png" /></a></li>
+				<li class="nav-activities"><a href="<?php echo site_url('activities')?>" title="最新活动"><img src="<?php echo get_template_directory_uri()?>/images/nav-activities.png" /></a></li>
 				<li class="sep"></li>
-				<li class="nav-join"><a href="#" title="加入我们"><img src="<?php echo get_template_directory_uri()?>/images/nav-join.png" /></a></li>
+				<li class="nav-join"><a href="<?php echo site_url('joinus')?>" title="加入我们"><img src="<?php echo get_template_directory_uri()?>/images/nav-join.png" /></a></li>
 			</ul>	
 		</div>
 		<div id="links-sns">
 			<ul>
-				<li class="contact"><a href="<?php echo site_url('about-futeng#contact')?>">联系我们</a></li>
+				<li class="contact"><a href="<?php echo site_url('about-futeng#section-contact')?>">联系我们</a></li>
 				<li class="sns sns-wx"><img src="<?php echo get_template_directory_uri()?>/images/icon-wx.png"></li>
 				<li class="sns"><a href="http://weibo.com/futengcapital" target="_blank"><img src="<?php echo get_template_directory_uri()?>/images/icon-wb.png"></a></li>				
 			</ul>

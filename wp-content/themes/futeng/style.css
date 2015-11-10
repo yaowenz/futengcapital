@@ -11,7 +11,7 @@ Text Domain: futeng
 @import 'library/animate.css';
 @import 'library/normalize.css';
 
-body, html {font-size:14px; font-family: '微软雅黑', Times New Roman;}
+body, html {font-size:14px; font-family: '微软雅黑', STHeiti, Times New Roman;}
 header {height:120px}
 
 .clear {float:none!important;clear:both!important;width:0px!important;height:0px!important;padding:0px!important}
@@ -42,20 +42,21 @@ footer .site-info {padding-right:10px}
 /** index **/
 #sliders-index {height:100%;}
 #sliders-index > .swiper-wrapper > .swiper-slide {background-repeat:no-repeat;background-position:center;background-size:cover}
-#sliders-index > .swiper-wrapper .text {position:absolute;left:50%;margin-top:50px}
+#sliders-index > .swiper-wrapper .text {position:absolute;right:10%;margin-top:100px}
 #sliders-index .swiper-slider-1 {background-image:url('images/slider-1.jpg');background-position:bottom center!important}
 #sliders-index .swiper-slider-2 {background-image:url('images/slider-2.jpg')}
 #sliders-index .swiper-slider-3 {background-image:url('images/slider-3.jpg')}
 #sliders-index .swiper-slider-4 {background-image:url('images/slider-4.jpg')}
 #sliders-index .swiper-slider-5 {background-image:url('images/slider-5.jpg')}
 #sliders-index .swiper-slider-6 {background-image:url('images/slider-6.jpg')}
-#slider-thumb {position:absolute;left:50px;z-index:100;margin-top:20px}
+#slider-thumb {position:absolute;left:50px;z-index:100;margin-top:80px}
 #slider-thumb > div.animated {
 	-webkit-animation-duration:200ms;animation-duration:200ms;-ms-animation-duration:200ms;-moz-animation-duration:200ms;
 	-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out;-moz-animation-timing-function:ease-out;
 }
 #slider-thumb > div {cursor:pointer;padding:5px;width:80px;height:80px;margin-bottom:10px;margin-right:10px;background:#000;color:#fff}
-#slider-thumb > div > span {display:none}
+#slider-thumb > div > a {display:inline-block;width:100%;height:100%}
+#slider-thumb > div > a > span {display:none}
 #slider-thumb > div.clear {background-image:none}
 #slider-thumb > div {background-image:url('images/slider-thumb-1.png');background-repeat:no-repeat;background-size:180px auto}
 #slider-thumb > div.active, #slider-thumb > div:hover {background:#fff;background-image:url('images/slider-thumb-2.png')!important;background-size:180px auto}
@@ -81,26 +82,33 @@ footer .site-info {padding-right:10px}
 
 
 /** page content **/
-.primary-wrapper {width:1000px;margin:auto}
-#page-side {float:left;width:350px;height:30px}
+.primary-wrapper {width:1200px;margin:auto}
+#page-side {float:left;width:300px;height:30px}
 .primary-wrapper {margin-top:50px}
-.primary-content {float:left;width:650px}
+.primary-content {float:left;width:900px}
 #secondary-nav {position:absolute;top:600px}
 #secondary-nav li a {color:#000;text-decoration:none}
-#secondary-nav li {margin:10px 0px;font-size:16px;border-bottom:1px dotted #999;padding:5px}
+#secondary-nav li {margin:10px 0px;font-size:18px;border-bottom:1px dotted #999;padding:5px}
 #secondary-nav li i {display:none!important}
-#secondary-nav li:hover, #secondary-nav li.active {font-weight:bold}
+#secondary-nav li.active {font-weight:bold}
 #secondary-nav li:hover i, #secondary-nav li.active i {display:inline-block!important}
 .page-content .cover-img {background-repeat:no-repeat;background-position:center;height:200px;width:100%;background-size:cover}
 .section-title {border-bottom:1px solid #999}
+.section-content > div {box-sizing:border-box}
 .section-content p {text-indent:28px;line-height:1.6}
-.section-content {margin-bottom:50px;color:#333}
+.section-content p.big {font-size:18px;font-weight:bold;margin-top:25px}
+.section-content {margin-bottom:80px;color:#333}
 .section-content:last-child {margin-bottom:150px}
 
-/** Page - About **/
+
+/** Pages **/
 #page-about-futeng .cover-img {background-image:url('images/cover-about.jpg')}
 #page-about-futeng .section-content table.partners {margin-top:10px}
 #page-about-futeng .section-content table.partners td {padding-right:20px}
 
+#page-projects .cover-img {background-image:url('images/cover-projects.jpg')}
+#page-projects h2 {font-size:1.5rem;margin:0.83rem 0rem;text-indent:28px;margin-top:35px}
 
-
+#page-business .cover-img {background-image:url('images/cover-business.jpg')}
+#page-business .content-credit p {margin:0px;line-height:1.8}
+#page-business .content-credit p.big {margin-top:15px;margin-bottom:5px}
