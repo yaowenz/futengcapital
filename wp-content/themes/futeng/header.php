@@ -10,7 +10,8 @@
 	<!--[if lt IE 9]>
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
 	<![endif]-->
-	<link rel="stylesheet" href="<?php echo get_stylesheet_uri()?>" type='text/css' media='all' />	
+	<link rel="stylesheet" href="<?php echo get_stylesheet_uri()?>" type='text/css' media='all' />
+	<link href="<?php echo get_template_directory_uri() . '/images/icon-logo.png'?>" rel="shortcut icon" />	
 	<?php wp_head(); ?>
 	<script type="text/javascript">
 	jQuery(function($) {
@@ -45,7 +46,7 @@
 				<li class="sep"></li>
 				<li class="nav-projects"><a href="<?php echo site_url('projects')?>" title="投资项目"><img src="<?php echo get_template_directory_uri()?>/images/nav-projects.png" /></a></li>
 				<li class="sep"></li>
-				<li class="nav-activities"><a href="<?php echo site_url('activities')?>" title="最新活动"><img src="<?php echo get_template_directory_uri()?>/images/nav-activities.png" /></a></li>
+				<li class="nav-activities"><a href="<?php echo site_url('archives/category/activities')?>" title="最新活动"><img src="<?php echo get_template_directory_uri()?>/images/nav-activities.png" /></a></li>
 				<li class="sep"></li>
 				<li class="nav-join"><a href="<?php echo site_url('joinus')?>" title="加入我们"><img src="<?php echo get_template_directory_uri()?>/images/nav-join.png" /></a></li>
 			</ul>	

@@ -52,19 +52,22 @@
 	    <div id="news-floater">	    	
 	    	<div class="news-content hidden">
 	    		<ul>
+	    			<?php 
+	    			$args = array (
+						'category_name'          => 'activities',
+						'pagination'             => false,
+						'posts_per_page'		 => 5,
+					);
+	    			// The Query
+	    			$query = new WP_Query( $args );
+	    			$posts = $query->posts;
+	    			
+	    			foreach($posts as $v):
+	    			?>
 	    			<li>
-	    				<p class="title"><a href="http://183.60.177.196/fin/lc/201510/26/8249840.html" target="_blank">投资再到投行，专注双边市场中的平衡点</a>	<span class="date">2015-10-26</span></p>
+	    				<p class="title"><a href="<?php echo get_the_permalink($v)?>" target="_blank"><?php echo get_the_title($v)?></a><span class="date"><?php echo get_the_date('Y-m-d', $v)?></span></p>
 	    			</li>
-	    			<!-- 
-	    			<li>
-	    				<p class="title"></p>
-	    				<p class="date"></p>	    			
-	    			</li>
-	    			<li>
-	    				<p class="title"></p>
-	    				<p class="date"></p>	    			
-	    			</li>
-	    			 -->
+	    			<?php endforeach;?>	    			
 	    		</ul>
 	    	</div>
 	    	<div class="news-button">

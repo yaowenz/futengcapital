@@ -1,6 +1,7 @@
 <?php
+if(session_id() == '') session_start();
 
-
+add_theme_support( 'post-thumbnails' );
 /**
  * Scripts
  */

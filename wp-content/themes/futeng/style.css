@@ -22,7 +22,7 @@ ul {padding:0px;margin:0px;list-style:none}
 header ul li {float:left}
 header #primary-nav {position:absolute;right:15px;top:85px}
 header #primary-nav ul li img {height:45px;margin:0px 15px}
-header #primary-nav ul li:hover, header #primary-nav ul li.active {background:#e3e3e3}
+header #primary-nav ul li:hover, header #primary-nav ul li.active {background:#eee}
 header #primary-nav ul li.sep {border-left:1px solid #666;height:30px;margin:8px 15px;}
 header #primary-nav li:last-child {border:none}
 header #links-sns {position:absolute;top:15px;right:15px}
@@ -70,7 +70,7 @@ footer .site-info {padding-right:10px}
 #news-floater {position:absolute;right:0px;bottom:80px;z-index:100}
 #news-floater .news-button {cursor:pointer;float:right}
 #news-floater .news-content {color:white;float:left;width:800px;height:174px;background:rgba(0,0,0,0.6);box-shadow:1px 5px 10px -2px #000;}
-#news-floater .news-content p {margin:0px;padding:0px;font-size:16px}
+#news-floater .news-content p {margin:0px;padding:0px;font-size:16px;line-height:1.8}
 #news-floater .news-content span.date {text-align:right;font-size:12px;font-style:italic;margin-left:25px}
 #news-floater .news-content a {color:#fff;text-decoration:none}
 #news-floater .news-content a:hover {text-decoration:underline}
@@ -83,7 +83,7 @@ footer .site-info {padding-right:10px}
 
 /** page content **/
 .primary-wrapper {width:1200px;margin:auto}
-#page-side {float:left;width:300px;height:30px}
+#page-side {float:left;width:300px;}
 .primary-wrapper {margin-top:50px}
 .primary-content {float:left;width:900px}
 .primary-content.full-width {width:1300px!important;float:none;clear:both}
@@ -120,9 +120,37 @@ footer .site-info {padding-right:10px}
 #page-joinus ul {list-style:disc;margin-left:20px}
 #page-joinus ul a {text-decoration:none;color:#999}
 #page-joinus ul a:hover {color:#333}
-#page-joinus ul li {font-size:20px;width:20%;border-bottom:1px dotted #999;padding:10px 0px;float:left;margin-top:20px;margin-right:5%}
+#page-joinus ul li {font-size:20px;width:20%;border-bottom:1px dotted #999;padding:5px 0px;float:left;margin-top:20px;margin-right:5%}
 #page-joinus ul li:hover {color:#333}
 
-/** Category Page **/
-.category-page #page-side {float:left;padding:0px 20px;}
-.category-page .primary-content {float:left;width:800px;border-right:1px dotted #333;padding-right:50px;margin-bottom:100px}
+/** Category & Content Page **/
+.category-page .cover-img, .single-content .cover-img {background-image:url('images/cover-content.jpg')}
+.category-page #page-side, .single-content #page-side {float:left;padding:0px 20px;padding-bottom:50px}
+.category-page .primary-content, .single-content .primary-content {float:left;width:800px;border-right:1px dotted #333;padding-right:50px;margin-bottom:100px}
+#page-side .side-title {font-size:18px}
+#page-side .side-title i {margin-right:10px}
+
+.primary-content {min-height:375px}
+.primary-content .screen-reader-text {display:none}
+.primary-content .pagination {text-align:center}
+.primary-content .nav-links a {text-decoration:none;color:#999;font-size:16px;display:inline-block;padding:5px}
+.primary-content .nav-links a:hover {color:#009dda}
+.primary-content h1.entry-title {margin:0px 0px 10px 0px;font-size:28px}
+.primary-content ol {margin-left:0px;padding-left:25px}
+.primary-content ol li {margin:1em 0px}
+.primary-content .entry-date {margin:10px 0px}
+
+
+#page-side .entry-side-list {margin-top:30px}
+#page-side .entry-side-list .post-thumb img {border:1px solid #ccc}
+#page-side .post-date {margin-left:15px;margin-top:5px;color:#999}
+#page-side .post-title {width:250px}
+#page-side .post-title a, #page-side .post-title {color:#009dda;text-decoration:none;font-size:16px}
+#page-side .post-title a:hover {text-decoration:underline}
+
+.category-page .entry-list {font-size:16px;margin-bottom:10px}
+.category-page .entry-list .entry-date {float:left;width:120px;margin:0px;color:#999}
+.category-page .entry-list .entry-title {font-weight:bold}
+.category-page .entry-list .entry-title a {color:#333;text-decoration:none}
+.category-page .entry-list .entry-title:hover i {display:inline-block}
+.category-page .entry-list .entry-title i {display:none}

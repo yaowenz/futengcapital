@@ -28,5 +28,5 @@ $posts = $query->posts;
 	</div>
 </div>
 <script type="text/javascript">
-jQuery('li.nav-joinus').addClass('active');
+jQuery('li.nav-join').addClass('active');
 </script>
