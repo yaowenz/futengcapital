@@ -1,5 +1,5 @@
 <div id="page-side">
-	<img src="<?php echo get_template_directory_uri()?>/images/slogan.png" />
+	<img src="<?php echo get_template_directory_uri()?>/images/slogan.jpg" width="200" />
 	<ul id="secondary-nav">
 		<li class="active"><i class="fa fa-angle-right hidden"></i>&nbsp;<a href="#section-zbsy">资本盛宴——互联网金融</a></li>
 		<li><i class="fa fa-angle-right hidden"></i>&nbsp;<a href="#section-wind">复腾暖风</a></li>

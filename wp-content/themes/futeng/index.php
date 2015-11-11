@@ -51,8 +51,7 @@
 	    	<div class="news-content hidden">
 	    		<ul>
 	    			<li>
-	    				<p class="title"><a href="http://183.60.177.196/fin/lc/201510/26/8249840.html" target="_blank">投资再到投行，专注双边市场中的平衡点</a></p>
-	    				<p class="date">2015-10-26</p>
+	    				<p class="title"><a href="http://183.60.177.196/fin/lc/201510/26/8249840.html" target="_blank">投资再到投行，专注双边市场中的平衡点</a>	<span class="date">2015-10-26</span></p>
 	    			</li>
 	    			<!-- 
 	    			<li>
