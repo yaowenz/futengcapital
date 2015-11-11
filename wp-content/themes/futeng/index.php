@@ -1,4 +1,6 @@
 <?php get_header(); ?>
+		<?php if ( have_posts() ) : ?>
+		<?php if ( is_home()) : ?>
 		<div id="slider-thumb">			
 			<div data-slider="1" class="active hidden slider-thumb-1"><a href="<?php echo site_url('about-futeng')?>"><span>关于复腾</span></a></div>
 			<div data-slider="2" class="hidden slider-thumb-2"><a href="<?php echo site_url('business#stock')?>"><span>新三板投资</span></a></div>
@@ -134,7 +136,16 @@
 		<div class="site-info">Copyright 2015&nbsp;&nbsp;&nbsp;&nbsp;上海复腾资产管理有限公司&nbsp;&nbsp;&nbsp;&nbsp;沪ICP备14052833号-1</div><!-- .site-info -->
 	</footer><!-- .site-footer -->
 </div><!-- .site -->
-
-<?php wp_footer(); ?>
+	<?php 
+		wp_footer();
+		else: 
+		get_template_part( 'content');
+		get_footer();
+		endif;
+	else:
+		get_template_part( 'content', 'none' );
+		get_footer();
+	endif;
+?>
 </body>
 </html>
