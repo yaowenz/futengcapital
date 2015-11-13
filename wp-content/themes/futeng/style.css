@@ -100,7 +100,10 @@ footer .site-info {padding-right:10px}
 .section-content p.big {font-size:18px;font-weight:bold;margin-top:25px}
 .section-content {margin-bottom:80px;color:#333}
 .section-content:last-child {margin-bottom:150px}
-
+.section-category {color:#999;font-size:14px;margin-bottom:10px}
+.section-category i {margin-right:10px}
+.section-category a {color:#999;text-decoration:none}
+.section-category a:hover {color:#333}
 
 /** Pages **/
 #page-about-futeng .cover-img {background-image:url('images/cover-about.jpg')}
@@ -148,9 +151,16 @@ footer .site-info {padding-right:10px}
 #page-side .post-title a, #page-side .post-title {color:#009dda;text-decoration:none;font-size:16px}
 #page-side .post-title a:hover {text-decoration:underline}
 
-.category-page .entry-list {font-size:16px;margin-bottom:10px}
+.category-page .entry-list {font-size:16px;margin-bottom:15px}
 .category-page .entry-list .entry-date {float:left;width:120px;margin:0px;color:#999}
 .category-page .entry-list .entry-title {font-weight:bold}
 .category-page .entry-list .entry-title a {color:#333;text-decoration:none}
 .category-page .entry-list .entry-title:hover i {display:inline-block}
 .category-page .entry-list .entry-title i {display:none}
+
+/** Dropdown Menu **/
+.cbp-hrsub-inner li {display:block;line-height:1.8;font-size:18px;float:none;clear:both}
+.cbp-hrsub-inner li:hover {background:transparent!important}
+.cbp-hrsub-inner li i {margin-right:10px}
+.cbp-hrsub-inner li a {color:#333}
+.cbp-hrsub-inner li a:hover {background:none}

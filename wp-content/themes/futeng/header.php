@@ -26,6 +26,7 @@
 					jQuery('#wx-floater').addClass('hidden');
 				}
 		);
+		cbpHorizontalMenu.init();
 	});	
 	</script>
 </head>
@@ -38,13 +39,60 @@
 				<a title="<?php bloginfo( 'name' ); ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri()?>/images/ft-logo.png"/></a>
 			</div>					
 		</div><!-- .site-branding -->
-		<div id="primary-nav">
+		<div id="primary-nav" class="cbp-hrmenu">
 			<ul>
-				<li class="nav-about"><a href="<?php echo site_url('about-futeng')?>" title="公司简介"><img src="<?php echo get_template_directory_uri()?>/images/nav-about.png" /></a></li>
+				<li class="nav-about">
+					<a href="<?php echo site_url('about-futeng')?>" title="公司介绍"><img src="<?php echo get_template_directory_uri()?>/images/nav-about.png" /></a>
+					<div class="cbp-hrsub">
+						<div class="cbp-hrsub-inner"> 
+							<div>			
+								<h4>FUTENG CAPITAL</h4>					
+								<ul>
+									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('about-futeng#about')?>">公司介绍</a></li>
+									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('about-futeng#culture')?>">企业文化</a></li>
+									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('about-futeng#contact')?>">联系我们</a></li>
+									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('about-futeng#partners')?>">合作机构</a></li>
+								</ul>
+							</div>							
+						</div><!-- /cbp-hrsub-inner -->
+					</div><!-- /cbp-hrsub -->
+				</li>
 				<li class="sep"></li>
-				<li class="nav-business"><a href="<?php echo site_url('business')?>" title="业务模式"><img src="<?php echo get_template_directory_uri()?>/images/nav-business.png" /></a></li>
+				<li class="nav-business">
+					<a href="<?php echo site_url('business')?>" title="业务模式"><img src="<?php echo get_template_directory_uri()?>/images/nav-business.png" /></a>
+					<div class="cbp-hrsub">
+						<div class="cbp-hrsub-inner"> 
+							<div>
+								<h4>OUR BUSINESS</h4>
+								<ul>
+									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('business#credit')?>">信贷中心</a></li>
+									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('business#loan')?>">融资租赁</a></li>
+									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('business#3rd')?>">第三方理财</a></li>
+									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('business#stock')?>">新三板投资</a></li>
+									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('business#pe')?>">股权投资PE</a></li>									
+								</ul>
+							</div>							
+						</div><!-- /cbp-hrsub-inner -->
+					</div><!-- /cbp-hrsub -->
+				</li>
 				<li class="sep"></li>
-				<li class="nav-projects"><a href="<?php echo site_url('projects')?>" title="投资项目"><img src="<?php echo get_template_directory_uri()?>/images/nav-projects.png" /></a></li>
+				<li class="nav-projects">
+					<a href="<?php echo site_url('projects')?>" title="投资项目"><img src="<?php echo get_template_directory_uri()?>/images/nav-projects.png" /></a>
+					<div class="cbp-hrsub">
+						<div class="cbp-hrsub-inner"> 
+							<div>
+								<h4>PROJECTS / INVESTMENTS</h4>
+								<ul>
+									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('projects#zbsy')?>">资本盛宴——互联网金融</a></li>
+									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('projects#wind')?>">复腾暖风</a></li>
+									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('projects#club')?>">复腾会——高端俱乐部</a></li>
+									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('projects#yixin')?>">一芯生物</a></li>
+									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('projects#gfoil')?>">高发石油</a></li>									
+								</ul>
+							</div>								
+						</div><!-- /cbp-hrsub-inner -->
+					</div><!-- /cbp-hrsub -->
+				</li>
 				<li class="sep"></li>
 				<li class="nav-activities"><a href="<?php echo site_url('archives/category/activities')?>" title="最新活动"><img src="<?php echo get_template_directory_uri()?>/images/nav-activities.png" /></a></li>
 				<li class="sep"></li>

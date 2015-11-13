@@ -3,9 +3,30 @@
 	<div class="primary-wrapper">	
 		<div class="primary-content">
 			<?php 
-				$post_id = 0;
+				$post_id = 0;							
+				
+				$current_categroy = '';
+				$link = '';							
+				
 				while ( have_posts() ) : the_post(); $post_id = $post->ID;
+				
+				$terms = wp_get_object_terms($post->ID, 'category');
+				
+				foreach($terms as $t) {
+					$current_categroy = $t->name;
+					$link = get_term_link($t, 'category');
+						
+					if($t->slug == 'recruit') {
+						$current_categroy = '加入我们';
+						$link = site_url('joinus');
+						break;
+					}
+					elseif($t->slug == 'activities') {
+						break;
+					}						
+				}				
 			?>
+			<div class="section-category"><i class="fa fa-angle-right"></i><a href="<?php echo $link?>"><?php echo $current_categroy?></a></div>
 			<div class="section-title"><?php the_title( '<h1 class="entry-title">', '</h1>' );?></div>
 			<div class="entry-date"><?php echo get_the_date();?></div>
 			<div class="section-content" style="margin-top:50px">				
@@ -20,7 +41,7 @@
 			<?php foreach($_SESSION['history'] as $v) : if(empty($v)) continue; ?>
 			<div class="entry-side-list">			
 				<?php if($t = get_post_thumbnail_id($v)): ?>
-				<div class="post-thumb"><img src="<?php echo array_shift(wp_get_attachment_image_src($t, 'medium')); ?>" width="250" /></div>
+				<div class="post-thumb"><a href="<?php echo get_permalink($post_histroy) ?>"><img src="<?php echo array_shift(wp_get_attachment_image_src($t, 'medium')); ?>" width="250" /></a></div>
 				<?php endif?>
 				<?php $post_histroy = get_post($v); ?>
 				<div class="post-title">● <a href="<?php echo get_permalink($post_histroy) ?>"><?php echo get_the_title($post_histroy)?></a></div>

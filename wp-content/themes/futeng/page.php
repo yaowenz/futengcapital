@@ -17,8 +17,6 @@ endwhile;
 
 		// trailing nav
 		jQuery(function($) {
-
-			console.log(444);
 			var scrolling = false;
 						
 			$('#secondary-nav li a').click(function() {
