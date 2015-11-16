@@ -21,8 +21,19 @@ jQuery(function($) {
 			$listItems.hover(open, close);
 		}
 	
-		function open( event ) {		
-			console.log($listItems);
+		function open( event ) {	
+			
+			event.stopPropagation();
+			event.preventDefault(); 
+			
+			if($(this).children('.cbp-hrsub').length == 0) return;
+			
+			$(this).children('.cbp-hrsub').offset({
+				left: $(event.target).offset(), 
+				top: $(this).children('.cbp-hrsub').offset().top + $(event.target).height()
+			});
+			
+			
 			if( current !== -1 ) {
 				$listItems.eq( current ).removeClass( 'cbp-hropen' );
 			}

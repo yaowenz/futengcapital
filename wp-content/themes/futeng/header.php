@@ -46,11 +46,10 @@
 					<div class="cbp-hrsub">
 						<div class="cbp-hrsub-inner"> 
 							<div>			
-								<h4>FUTENG CAPITAL</h4>					
+								<!-- <h4>FUTENG CAPITAL</h4> -->					
 								<ul>
 									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('about-futeng#about')?>">公司介绍</a></li>
 									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('about-futeng#culture')?>">企业文化</a></li>
-									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('about-futeng#contact')?>">联系我们</a></li>
 									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('about-futeng#partners')?>">合作机构</a></li>
 								</ul>
 							</div>							
@@ -63,7 +62,7 @@
 					<div class="cbp-hrsub">
 						<div class="cbp-hrsub-inner"> 
 							<div>
-								<h4>OUR BUSINESS</h4>
+								<!-- <h4>OUR BUSINESS</h4> -->
 								<ul>
 									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('business#credit')?>">信贷中心</a></li>
 									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('business#loan')?>">融资租赁</a></li>
@@ -81,7 +80,7 @@
 					<div class="cbp-hrsub">
 						<div class="cbp-hrsub-inner"> 
 							<div>
-								<h4>PROJECTS / INVESTMENTS</h4>
+								<!-- <h4>PROJECTS / INVESTMENTS</h4> -->
 								<ul>
 									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('projects#zbsy')?>">资本盛宴——互联网金融</a></li>
 									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('projects#wind')?>">复腾暖风</a></li>
@@ -96,12 +95,25 @@
 				<li class="sep"></li>
 				<li class="nav-activities"><a href="<?php echo site_url('archives/category/activities')?>" title="最新活动"><img src="<?php echo get_template_directory_uri()?>/images/nav-activities.png" /></a></li>
 				<li class="sep"></li>
-				<li class="nav-join"><a href="<?php echo site_url('joinus')?>" title="加入我们"><img src="<?php echo get_template_directory_uri()?>/images/nav-join.png" /></a></li>
+				<li class="nav-join">
+					<a href="<?php echo site_url('joinus')?>" title="加入我们"><img src="<?php echo get_template_directory_uri()?>/images/nav-join.png" /></a>
+					<div class="cbp-hrsub">
+						<div class="cbp-hrsub-inner"> 
+							<div>			
+								<!-- <h4>FUTENG CAPITAL</h4>-->			
+								<ul>
+									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('joinus#section-joinus')?>">加入我们</a></li>
+									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('joinus#section-contact')?>">联系我们</a></li>
+								</ul>
+							</div>							
+						</div><!-- /cbp-hrsub-inner -->
+					</div><!-- /cbp-hrsub -->
+				</li>
 			</ul>	
 		</div>
 		<div id="links-sns">
 			<ul>
-				<li class="contact"><a href="<?php echo site_url('about-futeng#section-contact')?>">联系我们</a></li>
+				<li class="contact"><a href="<?php echo site_url('joinus#section-contact')?>">联系我们</a></li>
 				<li class="sns sns-wx"><img src="<?php echo get_template_directory_uri()?>/images/icon-wx.png"></li>
 				<li class="sns"><a href="http://weibo.com/futengcapital" target="_blank"><img src="<?php echo get_template_directory_uri()?>/images/icon-wb.png"></a></li>				
 			</ul>

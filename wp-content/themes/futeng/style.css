@@ -20,6 +20,7 @@ header {height:120px}
 ul {padding:0px;margin:0px;list-style:none}
 
 header ul li {float:left}
+header ul li a {display:inline-block}
 header #primary-nav {position:absolute;right:15px;top:85px}
 header #primary-nav ul li img {height:45px;margin:0px 15px}
 header #primary-nav ul li:hover, header #primary-nav ul li.active {background:#eee}
@@ -159,8 +160,18 @@ footer .site-info {padding-right:10px}
 .category-page .entry-list .entry-title i {display:none}
 
 /** Dropdown Menu **/
-.cbp-hrsub-inner li {display:block;line-height:1.8;font-size:18px;float:none;clear:both}
+.cbp-hrsub-inner li {display:block;line-height:1.6;font-size:14px;float:none;clear:both}
 .cbp-hrsub-inner li:hover {background:transparent!important}
 .cbp-hrsub-inner li i {margin-right:10px}
 .cbp-hrsub-inner li a {color:#333}
 .cbp-hrsub-inner li a:hover {background:none}
+
+/** 页脚工具 **/
+.shortcut-tooltip a {display:inline-block;width:100%;height:100%}
+.shortcut-tooltip span {display:none}
+.shortcut-tooltip {background-image:url('images/icon-tool.png');background-repeat:no-repeat;width:50px;height:50px;background-size:100px auto}
+.shortcut-tooltip:hover {background-image:url('images/icon-tool-2.png')}
+.shortcut-tooltip.shortcut-home {background-position:0px 0px}
+.shortcut-tooltip.shortcut-top {background-position:-54px 0px}
+
+
