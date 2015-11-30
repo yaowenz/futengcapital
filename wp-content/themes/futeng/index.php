@@ -12,7 +12,7 @@
 			<div class="swiper-wrapper">				
 				<div class="swiper-slide swiper-slider-1">
 					<video id="ftvideo" class="video-js vjs-big-play-centered" preload="auto" controls>
-						<source src="http://121.43.232.196/115010001_1.mp4" type='video/mp4' />
+						<source src="http://www.futengcapital.com/ftvideo.mp4" type='video/mp4' />
 					</video>
 		        </div>
 				<div class="swiper-slide swiper-slider-2">		
@@ -72,14 +72,13 @@
 	    </div>     	
 		<script type="text/javascript">
 			var ie_simple_mode = jQuery('html').hasClass('ie-lt-10');
-
+			
 			// videojs
 			var player = videojs('ftvideo', {
 				language: "zh-CN",
-			});		
-
-			player.addChild('bigPlayButton');
-			player.removeChild('controlBar');
+			});
+			
+			//player.removeChild('controlBar');
 			
 			var playerReady = false;
 
@@ -97,26 +96,30 @@
 		        pagination: '.swiper-pagination',		      
 		        paginationClickable: true,
 		        autoplayDisableOnInteraction: true,
-		        onSlideChangeStart: function(swiper) {			       
+		        onSlideChangeStart: function(swiper) {	
+			        player.pause();		       
 		        	jQuery('#slider-thumb div').removeClass('active');
 					jQuery('#slider-thumb div[data-slider="' + (swiper.activeIndex + 1) + '"]').addClass('active animated');
 		        }
-		    });	
-
-		    		
+		    });			    		
 
 		    // 动态调整大图大小
 			jQuery(window).on('resize', function() {
 				var h = jQuery(window)[0].innerHeight - jQuery('header').height() - 20; // - margin 
 				if(h > 50) {
 					jQuery('div#content').height(h);
-				}
-
-				if(playerReady) {
-					player.height(jQuery('div.swiper-slider-1').height() - 40);					
-					jQuery('#ftvideo video').css("left", ((jQuery('div.swiper-slider-1').width() - player.width()) / 2) + "px");
-				}
+				}				
 				
+				jQuery('.vjs-big-play-button').css('left', jQuery('div.swiper-slider-1').width() / 2 + "px");
+						
+				if(playerReady) {
+					// origin video 960x540		
+					player.height(jQuery('div.swiper-slider-1').height() - 30);	
+					player.width(player.height() / 540 * 960);
+					var playerMarginLeft = ((jQuery('div.swiper-slider-1').width() - player.width()) / 2) + "px";
+					jQuery('#ftvideo video').css("left", playerMarginLeft);
+					jQuery('.vjs-control-bar').css('left', playerMarginLeft);
+				}				
 			});
 			
 			jQuery(window).resize();	
