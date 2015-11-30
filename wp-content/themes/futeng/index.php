@@ -3,10 +3,10 @@
 		<?php if ( is_home()) : ?>
 		<div id="slider-thumb">			
 			<div data-slider="1" class="active hidden slider-thumb-about"><a href="<?php echo site_url('about-futeng')?>"><span>关于复腾</span></a></div>
-			<div data-slider="2" class="hidden slider-thumb-bank"><a href="<?php echo site_url('business#pe')?>"><span>投资银行</span></a></div>
-			<div data-slider="3" class="hidden slider-thumb-asset"><a href="<?php echo site_url('business#credit')?>"><span>资产管理中心</span></a></div>
+			<div data-slider="2" class="hidden slider-thumb-bank"><a href="<?php echo site_url('business#bank')?>"><span>投资银行</span></a></div>
+			<div data-slider="3" class="hidden slider-thumb-asset"><a href="<?php echo site_url('business#asset')?>"><span>资产管理中心</span></a></div>
 			<div data-slider="4" class="hidden slider-thumb-stock"><a href="<?php echo site_url('business#stock')?>"><span>新三板投资</span></a></div>			
-			<div data-slider="5" class="hidden slider-thumb-loan"><a href="<?php echo site_url('business#3rd')?>"><span>融资租赁</span></a></div>
+			<div data-slider="5" class="hidden slider-thumb-loan"><a href="<?php echo site_url('business#loan')?>"><span>融资租赁</span></a></div>
 		</div>
 		<div class="swiper-container" id="sliders-index">
 			<div class="swiper-wrapper">				
