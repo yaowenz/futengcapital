@@ -56,8 +56,13 @@ endwhile;
 						$('#secondary-nav').offset({left: offsetX, top: offsetY});
 					}
 	
-					for(var i in sections) {
-						if($(window).scrollTop() < $(sections[i]).offset().top - 50) {
+					for(var i=0; i < sections.length; i++) {
+						var limit2 = 0;		
+						if(i > 0) {				
+							limit2 = $(sections[i-1]).next().offset().top + $(sections[i-1]).next().height() - 600;
+						}
+						console.log($(window).scrollTop() + "|" + ($(sections[i]).offset().top - 50) + "|" + limit2);
+						if($(window).scrollTop() < ($(sections[i]).offset().top - 50) && $(window).scrollTop() > limit2) {
 							var id = $(sections[i]).attr('id');
 							$('#secondary-nav li').removeClass('active');
 							//console.log($('#secondary-nav a[href="#' + id + '"]'));

@@ -42,7 +42,7 @@
 		<div id="primary-nav" class="cbp-hrmenu">
 			<ul>
 				<li class="nav-about">
-					<a href="<?php echo site_url('about-futeng')?>" title="公司介绍"><img src="<?php echo get_template_directory_uri()?>/images/nav-about.png" /></a>
+					<a href="<?php echo site_url('about-futeng')?>" title="集团介绍"><img src="<?php echo get_template_directory_uri()?>/images/nav-about.png" /></a>
 					<div class="cbp-hrsub">
 						<div class="cbp-hrsub-inner"> 
 							<div>			
@@ -58,17 +58,32 @@
 				</li>
 				<li class="sep"></li>
 				<li class="nav-business">
-					<a href="<?php echo site_url('business')?>" title="业务模式"><img src="<?php echo get_template_directory_uri()?>/images/nav-business.png" /></a>
+					<a href="<?php echo site_url('business')?>" title="集团业务"><img src="<?php echo get_template_directory_uri()?>/images/nav-business.png" /></a>
 					<div class="cbp-hrsub">
 						<div class="cbp-hrsub-inner"> 
 							<div>
 								<!-- <h4>OUR BUSINESS</h4> -->
 								<ul>
-									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('business#credit')?>">信贷中心</a></li>
-									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('business#loan')?>">融资租赁</a></li>
-									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('business#3rd')?>">第三方理财</a></li>
+									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('business#bank')?>">投资银行</a></li>									
+									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('business#asset')?>">资产管理中心</a></li>
 									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('business#stock')?>">新三板投资</a></li>
-									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('business#pe')?>">股权投资PE</a></li>									
+									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('business#loan')?>">融资租赁</a></li>								
+								</ul>
+							</div>							
+						</div><!-- /cbp-hrsub-inner -->
+					</div><!-- /cbp-hrsub -->
+				</li>
+				<li class="sep"></li>
+				<li class="nav-culture">
+					<a href="<?php echo site_url('culture')?>" title="集团文化"><img src="<?php echo get_template_directory_uri()?>/images/nav-culture.png" /></a>
+					<div class="cbp-hrsub">
+						<div class="cbp-hrsub-inner"> 
+							<div>
+								<!-- <h4>OUR BUSINESS</h4> -->
+								<ul>
+									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('culture#ftf')?>">复腾篮球队</a></li>
+									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('culture#wind')?>">复腾暖风</a></li>
+									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('culture#club')?>">复腾会——高端俱乐部</a></li>
 								</ul>
 							</div>							
 						</div><!-- /cbp-hrsub-inner -->
@@ -82,9 +97,7 @@
 							<div>
 								<!-- <h4>PROJECTS / INVESTMENTS</h4> -->
 								<ul>
-									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('projects#zbsy')?>">资本盛宴——互联网金融</a></li>
-									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('projects#wind')?>">复腾暖风</a></li>
-									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('projects#club')?>">复腾会——高端俱乐部</a></li>
+									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('projects#zbsy')?>">资本盛宴——互联网金融</a></li>									
 									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('projects#yixin')?>">一芯生物</a></li>
 									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('projects#gfoil')?>">高发石油</a></li>									
 								</ul>

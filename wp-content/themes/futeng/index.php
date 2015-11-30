@@ -2,49 +2,46 @@
 		<?php if ( have_posts() ) : ?>
 		<?php if ( is_home()) : ?>
 		<div id="slider-thumb">			
-			<div data-slider="1" class="active hidden slider-thumb-1"><a href="<?php echo site_url('about-futeng')?>"><span>关于复腾</span></a></div>
-			<div data-slider="2" class="hidden slider-thumb-2"><a href="<?php echo site_url('business#stock')?>"><span>新三板投资</span></a></div>
-			<!-- <div class="clear"></div> -->
-			<div data-slider="3" class="hidden slider-thumb-3"><a href="<?php echo site_url('business#credit')?>"><span>信贷中心</span></a></div>
-			<div data-slider="4" class="hidden slider-thumb-4"><a href="<?php echo site_url('business#pe')?>"><span>股权投资PE</span></a></div>
-			<!-- <div class="clear"></div> -->
-			<div data-slider="5" class="hidden slider-thumb-5"><a href="<?php echo site_url('business#3rd')?>"><span>第三方理财</span></a></div>
-			<div data-slider="6" class="hidden slider-thumb-6"><a href="<?php echo site_url('business#loan')?>"><span>融资租赁</span></a></div>
+			<div data-slider="1" class="active hidden slider-thumb-about"><a href="<?php echo site_url('about-futeng')?>"><span>关于复腾</span></a></div>
+			<div data-slider="2" class="hidden slider-thumb-bank"><a href="<?php echo site_url('business#pe')?>"><span>投资银行</span></a></div>
+			<div data-slider="3" class="hidden slider-thumb-asset"><a href="<?php echo site_url('business#credit')?>"><span>资产管理中心</span></a></div>
+			<div data-slider="4" class="hidden slider-thumb-stock"><a href="<?php echo site_url('business#stock')?>"><span>新三板投资</span></a></div>			
+			<div data-slider="5" class="hidden slider-thumb-loan"><a href="<?php echo site_url('business#3rd')?>"><span>融资租赁</span></a></div>
 		</div>
 		<div class="swiper-container" id="sliders-index">
-			<div class="swiper-wrapper">
+			<div class="swiper-wrapper">				
 				<div class="swiper-slide swiper-slider-1">
 					<!-- add some text content to FIX IE 11 swiper not working bug -->
 					&nbsp;&nbsp;
 					<!-- <div class="text" data-swiper-parallax="-1500" data-swiper-parallax-duration="1200">
-		            	<img width="400" src="<?php echo get_template_directory_uri()?>/images/slider-1-text.png" />
 		            </div> -->
 		        </div>
-				<div class="swiper-slide swiper-slider-2">				            
+				<div class="swiper-slide swiper-slider-2">		
+					&nbsp;&nbsp;		            
 		            <div class="text" data-swiper-parallax="-1500" data-swiper-parallax-duration="1200">
-		            	<img width="500" src="<?php echo get_template_directory_uri()?>/images/slider-2-text.png" />
+		            	<h2>投资银行</h2>
+		            	<p>FTCapital战略投资S.I.D是复腾资本近年来发展的业务创新，主要专注于互联网、消费服务、能源环保等领域中早期创业公司的投行与投资业务。</p>
 		            </div>
 				</div>
 				<div class="swiper-slide swiper-slider-3">
 					<div class="text" data-swiper-parallax="-1500" data-swiper-parallax-duration="1200">
-		            	<img width="400" src="<?php echo get_template_directory_uri()?>/images/slider-3-text.png" />
+						<h2>资产管理中心</h2>
+		            	<p>财富管理中心作为复腾资本旗下的财富管理品牌，依托强大的资金实力和深厚的金融行业资源，以及核心团队在创投、私募基金、资产管理、投资担保和实体等领域的成功经验，在坚持“从项目源头控制风险“的准则下，业务涉及财务保障规划、财务需求分析、资产配置、股权/债权投资管理、退休管理、子女教育基金管理、风险管理等综合性理财规划服务。</p>
+		            		            
 		            </div>
 		        </div>
 				<div class="swiper-slide swiper-slider-4">
-					<div class="text" data-swiper-parallax="-1500" data-swiper-parallax-duration="1200">
-		            	<img width="400" src="<?php echo get_template_directory_uri()?>/images/slider-4-text.png" />
+					<div class="text" data-swiper-parallax="-1500" data-swiper-parallax-duration="1200">		            
+		            	<h2>新三板投资</h2>
+		            	<p></p>		            
 		            </div>
 		        </div>
 				<div class="swiper-slide swiper-slider-5">
 					<div class="text" data-swiper-parallax="-1500" data-swiper-parallax-duration="1200">
-		            	<img width="400" src="<?php echo get_template_directory_uri()?>/images/slider-5-text.png" />
+						<h2>融资租赁</h2>
+		            	<p></p>		            		            	
 		            </div>
-		        </div>
-				<div class="swiper-slide swiper-slider-6">
-					<div class="text" data-swiper-parallax="-1500" data-swiper-parallax-duration="1200">
-		            	<img width="500" src="<?php echo get_template_directory_uri()?>/images/slider-6-text.png" />
-		            </div>
-		        </div>
+		        </div>			
 			</div>
 			<!-- Add Pagination -->
 			<!-- <div class="swiper-pagination"></div> -->
@@ -86,7 +83,7 @@
 		        pagination: '.swiper-pagination',		      
 		        paginationClickable: true,
 		        autoplayDisableOnInteraction: true,
-		        onSlideChangeStart: function(swiper) {
+		        onSlideChangeStart: function(swiper) {			       
 		        	jQuery('#slider-thumb div').removeClass('active');
 					jQuery('#slider-thumb div[data-slider="' + (swiper.activeIndex + 1) + '"]').addClass('active animated');
 		        }

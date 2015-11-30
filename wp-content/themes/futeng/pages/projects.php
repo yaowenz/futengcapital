@@ -1,11 +1,9 @@
 <div id="page-side">
 	<img src="<?php echo get_template_directory_uri()?>/images/slogan.jpg" width="200" />
 	<ul id="secondary-nav">
-		<li class="active"><i class="fa fa-angle-right hidden"></i>&nbsp;<a href="#section-zbsy">资本盛宴——互联网金融</a></li>
-		<li><i class="fa fa-angle-right hidden"></i>&nbsp;<a href="#section-wind">复腾暖风</a></li>
-		<li><i class="fa fa-angle-right hidden"></i>&nbsp;<a href="#section-club">复腾会——高端俱乐部</a></li>
+		<li class="active"><i class="fa fa-angle-right hidden"></i>&nbsp;<a href="#section-zbsy">资本盛宴——互联网金融</a></li>	
 		<li><i class="fa fa-angle-right hidden"></i>&nbsp;<a href="#section-yixin">一芯生物</a></li>
-		<li><i class="fa fa-angle-right hidden"></i>&nbsp;<a href="#section-gfoil">高发石油</a></li>
+		<li><i class="fa fa-angle-right hidden"></i>&nbsp;<a href="#section-gfoil">高发石油（已退出)</a></li>
 	</ul>
 </div>
 <div class="primary-content">
@@ -13,29 +11,10 @@
 		<img src="<?php echo get_template_directory_uri()?>/images/title-zbsy.png" width="450" />
 	</div>
 	<div class="section-content">
-		<p>资本盛宴（www.capitalfeast.com）于2015年正式上线，由上海复腾资本管理有限公司负责运营， 致力于扶持中国实体经济发展， 为小微企业解决融资难融资贵的难题。目前注册资本达到1亿元(实收资本)。</p>
+		<p><a style="color:#333" href="http://www.capitalfeast.com">资本盛宴（www.capitalfeast.com）</a>于2015年正式上线，由上海复腾资本管理有限公司负责运营， 致力于扶持中国实体经济发展， 为小微企业解决融资难融资贵的难题。目前注册资本达到1亿元(实收资本)。</p>
     	<p>随着资本盛宴平台的不断升级，我们将迈入飞速发展的快车道，严格遵守国家相关法律法规，在法律、法规规定的范围内为供需双方提供中介服务，促使互联网金融行为阳光化、合法化，从体制、机制上解决中小微企业的融资问题。同时,我们也将竭尽所能,不断完善对网站平台的管理,努力提升企业内部人员的素质，竭诚为广大用户提供更优质的理财产品，更完善的服务为客户创造投资价值，本着诚信、公开、透明的服务理念，利用资本盛宴为广大的创业者共同打造一个诚信、公平、自由的互联网金融服务平台。</p>
     	<img src="<?php echo get_template_directory_uri()?>/images/img-zbsy.jpg" width="100%"  />		
-	</div>
-	<div class="section-title" id="section-wind">
-		<img src="<?php echo get_template_directory_uri()?>/images/title-wind.png" width="350" />
-	</div>
-	<div class="section-content">
-		<p>复腾资本集团于2012年成立，是一家专注于长期结构性价值投资的投资公司，致力于集聚全球优质资本，以股权投资为纽带，助力中国实体经济发展。合伙人及投资团队兼备国际经济发展视野和本土创业企业经验，从成立至今，复腾资本坚持独立思考，深入研究，主要投资于新媒体、房地产、消费与零售、互联网与媒体、医疗健康、能源与制造业等行业里处于不同发展阶段的优秀企业。</p>
-    	<p>复腾从创立之初起就定位于做具有独立投资视角的投资者，受托管理的资金主要来自于目光长远的全球性机构投资人，包括家族基金及主权财富基金等。 作为中国最优秀的基金之一，复腾资本拥有根植中国的国际化团队，可以实质性协助企业提高经营管理水平、进行国际化拓展，建立行业领先地位。复腾资本与被投企业结伴同行、共同发展，在帮助企业成长过程中获得投资回报，共同为中国经济发展做出贡献。</p>
-    	<h2>暖风养老项目——兴隆禅寺</h2>
-    	<p>中国历来以百善孝为先为传统美德，传承佛教理念，与人为善，慈悲为怀，兴隆禅寺作为社会的一份子，在弘扬佛法的同时，更应响应党和政府制定的中国老龄事业“十二五”规划的政策，并根据自身特点参与养老产业，本着还原兴隆禅寺为尽孝而建的本意，兴建一座让老年人住得幸福，吃得满意，看得舒心的绿色生态养老场所，泽被苍生收养鳏寡孤独老人，为政府分忧解难。</p>
-    	<p>兴隆禅寺安养院建成后， 将接收社会各界的孤寡老人及愿意入住此地的“空巢”老人，以给他们提供一个颐养天年的幸福之地， 也将吸收大批慈善人士来寺院帮助老年人， 与老年人共同在此地修身养性，学习佛法并排解社会发展过快给予的压力。寺庙将把弘扬佛法事业传递给每一位有缘人，力求把佛教精神通过一个新渠道传承下去， 提升自身的品牌及社会慈善能力。</p>
-    	<img src="<?php echo get_template_directory_uri()?>/images/img-wind.jpg" width="100%"  />		
-	</div>
-	<div class="section-title" id="section-club">
-		<img src="<?php echo get_template_directory_uri()?>/images/title-club.png" width="350"  />
-	</div>
-	<div class="section-content">
-		<p>复腾会是复腾资本旗下的高端俱乐部。主要是以会员制形式针对高端客户、战略合作伙伴等群体组织定期活动。活动主题涉及金融、公益、时尚、文艺以及体育等行业领域。其标志由一个大写的繁体“会” 字和一枚中式古典印章组成。而印章中别具一格地填写了英语字母M、E、E、T，寓意着复腾会以传统文化为本，融合西式运营理念。MEET合在一起本身可译为“会议”、“会晤”，而分开来解释就代表着复腾会的价值核心以及创立精神，即Membership（会员制），Elite（精英人群），Entertainment（娱乐）以及Taste（品味）。复腾会不仅是复腾资本一个面向高端人群的社交平台，更是一个展现复腾文化和价值的主要窗口。</p>
-		<img src="<?php echo get_template_directory_uri()?>/images/img-club.jpg" width="100%"  />	
-	</div>
-	
+	</div>		
 	<div class="section-title" id="section-yixin">
 		<img src="<?php echo get_template_directory_uri()?>/images/title-yixin.png" width="350"  />
 	</div>

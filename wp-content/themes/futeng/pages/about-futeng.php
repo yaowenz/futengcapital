@@ -1,7 +1,7 @@
 <div id="page-side">
 	<img src="<?php echo get_template_directory_uri()?>/images/slogan.jpg" width="200" />
 	<ul id="secondary-nav">
-		<li class="active"><i class="fa fa-angle-right hidden"></i>&nbsp;<a href="#section-about">公司介绍 About</a></li>
+		<li class="active"><i class="fa fa-angle-right hidden"></i>&nbsp;<a href="#section-about">集团介绍 About</a></li>
 		<li><i class="fa fa-angle-right hidden"></i>&nbsp;<a href="#section-culture">企业文化 Culture</a></li>		
 		<li><i class="fa fa-angle-right hidden"></i>&nbsp;<a href="#section-partners">合作机构 Partners</a></li>
 	</ul>
