@@ -7,7 +7,13 @@ add_theme_support( 'post-thumbnails' );
  */
 add_action( 'wp_enqueue_scripts', 'futeng_scripts' );
 
-function futeng_scripts() {	
+function futeng_scripts() {
+		
+	//VideoJs
+	wp_enqueue_script('videojs', get_template_directory_uri() . '/library/videojs/video.min.js');
+	wp_enqueue_style('videojs', get_template_directory_uri() . '/library/videojs/video-js.css');
+	
+	
 	// Swiper
 	wp_enqueue_script('swiper', get_template_directory_uri() . '/library/swiper/js/swiper.jquery.min.js', array( 'jquery' ), '3.1.7', false);
 	wp_enqueue_style('swiper', get_template_directory_uri() . '/library/swiper/css/swiper.min.css');

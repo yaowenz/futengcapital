@@ -11,10 +11,9 @@
 		<div class="swiper-container" id="sliders-index">
 			<div class="swiper-wrapper">				
 				<div class="swiper-slide swiper-slider-1">
-					<!-- add some text content to FIX IE 11 swiper not working bug -->
-					&nbsp;&nbsp;
-					<!-- <div class="text" data-swiper-parallax="-1500" data-swiper-parallax-duration="1200">
-		            </div> -->
+					<video id="ftvideo" class="video-js vjs-big-play-centered" preload="auto" controls>
+						<source src="http://121.43.232.196/115010001_1.mp4" type='video/mp4' />
+					</video>
 		        </div>
 				<div class="swiper-slide swiper-slider-2">		
 					&nbsp;&nbsp;		            
@@ -73,13 +72,28 @@
 	    </div>     	
 		<script type="text/javascript">
 			var ie_simple_mode = jQuery('html').hasClass('ie-lt-10');
+
+			// videojs
+			var player = videojs('ftvideo', {
+				language: "zh-CN",
+			});		
+
+			player.addChild('bigPlayButton');
+			player.removeChild('controlBar');
+			
+			var playerReady = false;
+
+			player.ready(function(){
+				playerReady = true;			
+				jQuery(window).resize();
+			});
 							
 			// ie9 使用 slide 能显示幻灯片, ie8 不支持
 			var swiper = new Swiper('.swiper-container', {
 				effect: 'fade',
 				parallax: true,
 				speed: 800,
-				autoplay: 3000,
+				autoplay: 0,
 		        pagination: '.swiper-pagination',		      
 		        paginationClickable: true,
 		        autoplayDisableOnInteraction: true,
@@ -87,7 +101,9 @@
 		        	jQuery('#slider-thumb div').removeClass('active');
 					jQuery('#slider-thumb div[data-slider="' + (swiper.activeIndex + 1) + '"]').addClass('active animated');
 		        }
-		    });			
+		    });	
+
+		    		
 
 		    // 动态调整大图大小
 			jQuery(window).on('resize', function() {
@@ -95,7 +111,14 @@
 				if(h > 50) {
 					jQuery('div#content').height(h);
 				}
+
+				if(playerReady) {
+					player.height(jQuery('div.swiper-slider-1').height() - 40);					
+					jQuery('#ftvideo video').css("left", ((jQuery('div.swiper-slider-1').width() - player.width()) / 2) + "px");
+				}
+				
 			});
+			
 			jQuery(window).resize();	
 
 			// 最新动态
