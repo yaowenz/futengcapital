@@ -43,7 +43,7 @@ footer .site-info {padding-right:10px}
 /** index **/
 #sliders-index {height:100%;}
 #sliders-index > .swiper-wrapper > .swiper-slide {background-repeat:no-repeat;background-position:center;background-size:cover}
-#sliders-index > .swiper-wrapper .text {position:absolute;right:50px;margin-top:50px;width:300px;padding:30px;background:rgba(0,0,0,0.5);color:#fff;line-height:1.5;font-size:14px}
+#sliders-index > .swiper-wrapper .text {position:absolute;right:50px;margin-top:50px;width:600px;padding:30px;background:rgba(0,0,0,0.5);color:#fff;line-height:1.8;font-size:16px}
 #sliders-index > .swiper-wrapper .text h2 {margin:0px;font-size:26px;font-weight:bold;padding:0px}
 #sliders-index .swiper-slider-1 {background:#000}
 #sliders-index .swiper-slider-2 {background-image:url('images/slider-6.jpg')}
@@ -78,7 +78,7 @@ footer .site-info {padding-right:10px}
 #news-floater .news-content a:hover {text-decoration:underline}
 #news-floater .news-content ul {padding:10px 15px 10px 35px;list-style:disc;}
 
-#wx-floater {position:absolute;right:10px;top:70px;z-index:100;}
+#wx-floater {position:absolute;left:45%;top:35%;z-index:100;background:rgba(0,0,0,0.8);padding:50px}
 
 #footer-index {position:absolute;bottom:0px;height:30px;left:0px;color:#fff;line-height:30px;width:100%;text-align:right}
 

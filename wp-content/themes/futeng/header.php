@@ -132,7 +132,8 @@
 			</ul>
 		</div>
 		 <div id="wx-floater" class="hidden">
-	    	<img width="150" src="<?php echo get_template_directory_uri()?>/images/wx.jpg" />
+		 	<p style="margin-top:0px;font-size:16px;color:white;text-align:center">微信扫一扫关注我们</p>
+	    	<img width="200" src="<?php echo get_template_directory_uri()?>/images/wx.jpg" />
 	    </div>  
 	</header><!-- .site-header -->	
 	<div id="content" class="site-content">
