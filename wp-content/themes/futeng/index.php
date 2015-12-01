@@ -19,7 +19,7 @@
 					&nbsp;&nbsp;		            
 		            <div class="text" data-swiper-parallax="-1500" data-swiper-parallax-duration="1200">
 		            	<h2>投资银行</h2>
-		            	<p>FTCapital战略投资S.I.D是复腾资本近年来发展的业务创新，主要专注于互联网、消费服务、能源环保等领域中早期创业公司的投行与投资业务。</p>
+		            	<p>复腾资本战略投资S.I.D是复腾资本近年来发展的业务创新，主要专注于互联网、消费服务、能源环保等领域中早期创业公司的投行与投资业务。</p>
 		            </div>
 				</div>
 				<div class="swiper-slide swiper-slider-3">
@@ -32,13 +32,13 @@
 				<div class="swiper-slide swiper-slider-4">
 					<div class="text" data-swiper-parallax="-1500" data-swiper-parallax-duration="1200">		            
 		            	<h2>新三板投资</h2>
-		            	<p></p>		            
+		            	<p>在如今中国，新三板为中小创新企业的发展提供了绝佳资本环境，被称为“中国版纳斯达克”，而其自身也正迎来历史性的发展时机——估值提升、交易机制日趋完善、转版制度升级为其带来了巨大投资机遇。复腾资本前瞻性地布局生物医药、能源、互联网、高新技术等领域，以专业资本运作，借力新三板融资优势，使被投企业更加快速地健康成长，促进中国产业结构升级，助力民族产业的进一步成熟和开放。</p>		            
 		            </div>
 		        </div>
 				<div class="swiper-slide swiper-slider-5">
 					<div class="text" data-swiper-parallax="-1500" data-swiper-parallax-duration="1200">
 						<h2>融资租赁</h2>
-		            	<p></p>		            		            	
+		            	<p>融资租赁在中国是一个新兴的行业，不仅在各交易主体之间实现新的权责利平衡，为客户提供了新的融资方法，而且成为交易主体优势互补、配置资源的机制和均衡税务的理财工具。 复腾资本融资租赁服务兼具融资、理财、促销、节税、资产管理等强大功能，将有效帮助股东企业和中小民营企业快速稳健发展和转型升级。</p>		            		            	
 		            </div>
 		        </div>			
 			</div>
@@ -119,6 +119,7 @@
 					var playerMarginLeft = ((jQuery('div.swiper-slider-1').width() - player.width()) / 2) + "px";
 					jQuery('#ftvideo video').css("left", playerMarginLeft);
 					jQuery('.vjs-control-bar').css('left', playerMarginLeft);
+					player.play();
 				}				
 			});
 			

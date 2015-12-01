@@ -19,10 +19,10 @@
 		jQuery('.sns-wx').hover(
 				function() {					
 					jQuery('#wx-floater').removeClass('hidden');
-					jQuery('#wx-floater').addClass('animated fadeInUp');
+					jQuery('#wx-floater').addClass('animated fadeIn');
 				}, 
 				function() {
-					jQuery('.news-content').removeClass('animated fadeInUp');
+					jQuery('.news-content').removeClass('animated fadeIn');
 					jQuery('#wx-floater').addClass('hidden');
 				}
 		);
