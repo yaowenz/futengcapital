@@ -100,6 +100,9 @@
 			        player.pause();		       
 		        	jQuery('#slider-thumb div').removeClass('active');
 					jQuery('#slider-thumb div[data-slider="' + (swiper.activeIndex + 1) + '"]').addClass('active animated');
+		        },
+		        onSlideChangeEnd: function(swiper) {
+			        if(swiper.activeIndex == 0) player.play();
 		        }
 		    });			    		
 
