@@ -8,24 +8,27 @@
 </div>
 <div class="primary-content">
 	<div class="section-title" id="section-ftf">
-		<img src="<?php echo get_template_directory_uri()?>/images/title-ftf.jpg" />
+		<img src="<?php echo get_template_directory_uri()?>/images/title-ftf-new.jpg" width="200" />
 	</div>
 	<div class="section-content">
-		<p>FTF篮球队的前身是在15年5月上大六强联赛中夺得冠军的泰欣篮球队，同年6月复腾投资集团入主泰欣，球队正式更名为FTF篮球队（Fu Teng Front），8月复腾投资集团为FTF篮球队补充了大量新鲜血液，并聘请了经验丰富的外籍教练帮助球队全方位提高实力，球队在9月份开始的SIBL联赛中表现不俗，以全胜战绩进入四强，更是积极备战冠军之战，与此同时筹备着进行多场慈善、表演等非竞技比赛。</p>
-    	<img src="<?php echo get_template_directory_uri()?>/images/img-ftf2.jpg" width="100%"  />
+		<p>FTF全称FuTeng Front是一支由复腾资本赞助的半职业男子篮球队，其前身是2015年在上大六强赛中夺冠的泰欣队。</p>
+		<p>复腾资本于2015年6月正式入主泰欣，球队从此更名为FTF，并随即展开新援招募补强阵容，聘请经验丰富的外籍教练，以此提升球队综合实力；于同年9月开打的SIBL联赛中，FTF表现抢眼，首次参赛便以全胜战绩获得赛事B组冠军。</p>
+		<p>2016年的FTF重装上阵，开始SIBL联赛A组的征程。</p>
+		<p>同时FTF也以篮球为纽带，积极投身于公益事业，传递社会正能量，长期助力该项运动在本土的发展和青少年的成长。</p>
+		<img src="<?php echo get_template_directory_uri()?>/images/img-ftf3.jpg" width="100%"  />
 	</div>
 	<div class="section-title" id="section-wind">
-		<img src="<?php echo get_template_directory_uri()?>/images/title-wind.png" width="350" />
+		<img src="<?php echo get_template_directory_uri()?>/images/title-wind-new.jpg" width="200" />
 	</div>
 	<div class="section-content">
-		<p>复腾暖风是由复腾资本于2014年自发成立的公益组织，致力于将金融行业所承担的责任感和使命感,转化成公益力量,回馈社会。自成立以来，复腾暖风始终奉行“公益金融，造福社会”的理念，积极履行作为公益组织的社会责任，并展开一系列针对医药领域、养老、敬老以及传统文化传承的公益活动回馈社会，为中国公益慈善事业的发展尽出了自己的一份力。</p>
-    	<img src="<?php echo get_template_directory_uri()?>/images/img-wind.jpg" width="100%"  />		
+		<p>复腾暖风是由复腾资本于2014年自发成立的一个公益组织，旨在将金融行业固有的责任与使命感，带入到社会公益事业中。成立至今，复腾暖风始终积极履行公益组织应有的责任与义务，在医疗技术、养老敬老、关爱青少年成长以及传统文化传承等方面，以“情暖人间，如沐春风”为题，将暖风带进社会各个角落，也努力为中国的公益慈善事业树立新风气。</p>
+		<img src="<?php echo get_template_directory_uri()?>/images/img-wind.jpg" width="100%"  />		
 	</div>
 	<div class="section-title" id="section-club">
-		<img src="<?php echo get_template_directory_uri()?>/images/title-club.png" width="350"  />
+		<img src="<?php echo get_template_directory_uri()?>/images/title-club-new.jpg" width="200"  />
 	</div>
 	<div class="section-content">
-		<p>复腾会是复腾资本旗下的高端俱乐部。主要是以会员制形式针对高端客户、战略合作伙伴等群体组织定期活动。活动主题涉及金融、公益、时尚、文艺以及体育等行业领域。其标志由一个大写的繁体“会” 字和一枚中式古典印章组成。而印章中别具一格地填写了英语字母M、E、E、T，寓意着复腾会以传统文化为本，融合西式运营理念。MEET合在一起本身可译为“会议”、“会晤”，而分开来解释就代表着复腾会的价值核心以及创立精神，即Membership（会员制），Elite（精英人群），Entertainment（娱乐）以及Taste（品味）。复腾会不仅是复腾资本一个面向高端人群的社交平台，更是一个展现复腾文化和价值的主要窗口。</p>
+		<p>复腾会是复腾资本旗下的精英俱乐部，以会员制形式聚集社会精英人群，旨在以金融行业为圆心，与时尚、文体、公益等领域进行联动，开展相关的社会活动；同时，复腾会也是一个展示复腾企业文化和价值的重要平台。</p>
 		<img src="<?php echo get_template_directory_uri()?>/images/img-club.jpg" width="100%"  />	
 	</div>	
 	
