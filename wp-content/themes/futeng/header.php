@@ -99,7 +99,6 @@
 								<ul>
 									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('projects#zbsy')?>">资本盛宴——互联网金融</a></li>									
 									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('projects#yixin')?>">一芯生物</a></li>
-									<li><i class="fa fa-angle-right"></i><a href="<?php echo site_url('projects#gfoil')?>">高发石油</a></li>									
 								</ul>
 							</div>								
 						</div><!-- /cbp-hrsub-inner -->
